@@ -13,7 +13,7 @@ contract StandardToken is IToken {
     }
 
 
-    function openTrade(bool _open) onlyOwner public returns (bool success) {
+    function openTrade() onlyOwner public returns (bool success) {
         tradeOpened = true;
         return true;
     }
